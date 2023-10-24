@@ -17,8 +17,14 @@ Some notes:
 - Before this automation works as intended you have to manually set your preferred order with `efibootmgt -o x,y,z`. This is also true for every **new** kernel you install.
 - You will need an efi-stub file, which can be installed via the package `gummiboot-efistub`.
 - Dracut needs `objcopy` to build the efi files, this is provided by package `binutils`.
-- These files assume you have installed `plymouth` and microcode update-files for your kernel: `intel-ucode` if you have an Intel CPU.
+- De default files assume you have `plymouth` installed and microcode update-files for your kernel: `intel-ucode` if you have an Intel CPU. You can change this in de dracut config files in `/etc/dracut`.
 
 # Installation
-1. Place files in appropriate directories like in this repository.
-2. All user configuration is done in 2 files: `/etc/default/dracut-uki-hook` and `/etc/default/efibootmgr-uki-hook`: Edit these and you are good to go. Enable everything by setting `UKI_ON` to `1` in `/etc/default/dracut-uki-hook`.
+1. Clone repo
+2. Place files in appropriate directories as root.
+3. Configure. In general no need to edit files in `/etc/kernel.d` Configuration in:
+- `/etc/default/dracut-uki-hook`
+- `/etc/default/efibootmgr-uki-hook`
+- The files in `/etc/dracut`
+
+Enable everything by setting `UKI_ON` to `1` in `/etc/default/dracut-uki-hook`.
