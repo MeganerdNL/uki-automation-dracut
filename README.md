@@ -25,7 +25,7 @@ Enable everything by setting `UKI_ON=1` in `/etc/default/dracut-uki-hook`.
 - `gummiboot-efistub`. For dracut to build UKI files.
 
 ## Optional dependencies
-- De default files here assume you have `plymouth` installed and microcode update-files for your kernel: `intel-ucode` if you have an Intel CPU. You can change this in de dracut config files in `/etc/dracut`.
+The default files here assume you have `plymouth` installed and microcode update-files for your kernel: `intel-ucode` if you have an Intel CPU. You can change this in de dracut config files in `/etc/dracut`.
 
 ## Some notes
 - The easiest way to setup Secure Boot in te first place, is via `sbctl`  - install it. See [Arch wiki](https://wiki.archlinux.org/title/Unified_Extensible_Firmware_Interface/Secure_Boot) section on sbctl.
