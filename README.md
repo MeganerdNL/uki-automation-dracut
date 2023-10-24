@@ -1,4 +1,4 @@
-# uki-automation-dracut
+# Unified Kernel Image automation with dracut
 Config / Automation for Unified Kernel Images (UKIs) directly booted from UEFI menu with dracut and efibootmgr with a normal and an optional fallback UKI per installed kernel and (optionally) with Secure Boot enabled.
 
 **Use at your own risk**  
