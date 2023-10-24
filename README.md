@@ -1,7 +1,7 @@
 # uki-automation-dracut
 Config / Automation for Unified Kernel Images (UKIs) directly booted from UEFI menu with dracut and efibootmgr with a normal and an optional fallback image per kernel and Secure Boot enabled.
 
-**Use at your own risk**
+**Use at your own risk**  
 I use this with my Void Linux install on my laptop. 
 These scripts will create _signed_ (for Secure Boot) bootable efi files and boot-entries in the UEFI menu of your motherboard/laptop. No bootloader needed!
 
