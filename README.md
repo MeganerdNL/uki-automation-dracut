@@ -22,7 +22,7 @@ Enable everything by setting `UKI_ON=1` in `/etc/default/dracut-uki-hook`.
 ## Dependencies
 - `sbsigntool`. For dracut to work with Secure Boot.
 - `binutils` (provides `objcopy`). For dracut to build UKI files.
-- `gummiboot-efistub`. For dracut to build UKI files
+- `gummiboot-efistub`. For dracut to build UKI files.
 
 ## Optional dependencies
 - De default files here assume you have `plymouth` installed and microcode update-files for your kernel: `intel-ucode` if you have an Intel CPU. You can change this in de dracut config files in `/etc/dracut`.
