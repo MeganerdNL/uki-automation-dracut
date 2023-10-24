@@ -5,11 +5,11 @@ Config / Automation for Unified Kernel Images (UKIs) directly booted from UEFI m
 I use this with my Void Linux install on my laptop. 
 These scripts will create _signed_ (for Secure Boot) bootable efi files and boot-entries in the UEFI menu of your motherboard/laptop. No bootloader needed!
 
-The scripts here are automatically used by `xbps-install` / `xbps-remove` and `vkpurge`.
+The files provided here here are automatically used by `xbps-install` / `xbps-remove` and `vkpurge` if placed in the appropriate directories, see Installation section.
 
 # Installation
 1. Clone repo
-2. Place files in appropriate directories as root.
+2. Place files in appropriate directories in `/etc` as root.
 3. Configure.
 
 In general there's no need to edit files in `/etc/kernel.d` You can adjust things in:
