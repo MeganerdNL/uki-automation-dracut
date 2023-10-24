@@ -19,7 +19,7 @@ Enable everything by setting `UKI_ON` to `1` in `/etc/default/dracut-uki-hook`.
 
 ## Dependencies
 - `sbsigntool`. For dracut to work with Secure Boot.
-- `binutils` for `objcopy`. For dracut to build UKI files.
+- `binutils` (provides `objcopy`). For dracut to build UKI files.
 - `gummiboot-efistub`. For dracut to build UKI files
 
 ## Optional dependencies
