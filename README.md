@@ -20,4 +20,5 @@ Some notes:
 - These files assume you have installed `plymouth` and microcode update-files for your kernel: `intel-ucode` if you have an Intel CPU.
 
 # Installation
-All user configuration is done in 2 files: `/etc/default/dracut-uki-hook` and `/etc/default/efibootmgr-uki-hook`: Edit these and you are good to go. Enable everything by setting `UKI_ON` to `1` in `/etc/default/dracut-uki-hook`.
+1. Place files in appropriate directories
+2. All user configuration is done in 2 files: `/etc/default/dracut-uki-hook` and `/etc/default/efibootmgr-uki-hook`: Edit these and you are good to go. Enable everything by setting `UKI_ON` to `1` in `/etc/default/dracut-uki-hook`.
