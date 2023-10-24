@@ -12,10 +12,10 @@ The scripts here are automatically used by `xbps-install` / `xbps-remove` and `v
 2. Place files in appropriate directories as root.
 3. Configure.
 
-In general no need to edit files in `/etc/kernel.d` Configuration in:
+In general there's no need to edit files in `/etc/kernel.d` You can adjust things in:
 - `/etc/default/dracut-uki-hook`
 - `/etc/default/efibootmgr-uki-hook`
-- The files in `/etc/dracut`
+- The files in `/etc/dracut` (kernel command line, plymouth, etcetera).
 
 Enable everything by setting `UKI_ON` to `1` in `/etc/default/dracut-uki-hook`.
 
