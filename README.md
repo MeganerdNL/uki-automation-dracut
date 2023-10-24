@@ -11,7 +11,8 @@ The scripts here are automatically used by `xbps-install` / `xbps-remove` and `v
 1. Clone repo
 2. Place files in appropriate directories as root.
 3. Configure.
-   In general no need to edit files in `/etc/kernel.d` Configuration in:
+
+In general no need to edit files in `/etc/kernel.d` Configuration in:
 - `/etc/default/dracut-uki-hook`
 - `/etc/default/efibootmgr-uki-hook`
 - The files in `/etc/dracut`
