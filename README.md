@@ -17,7 +17,7 @@ In general there's no need to edit files in `/etc/kernel.d` You can adjust thing
 - `/etc/default/efibootmgr-uki-hook`
 - The files in `/etc/dracut` (kernel command line, plymouth, etcetera).
 
-Enable everything by setting `UKI_ON` to `1` in `/etc/default/dracut-uki-hook`.
+Enable everything by setting `UKI_ON=1` in `/etc/default/dracut-uki-hook`.
 
 ## Dependencies
 - `sbsigntool`. For dracut to work with Secure Boot.
