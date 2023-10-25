@@ -55,13 +55,3 @@ fi
 
 # Restore the boot order
 efibootmgr -qo $bootorder
-
-echo
-echo ---- NOTE ----
-echo If you added a new kernel, you need to add the UKI
-echo to the boot order with \"efibootmgr -o value1,value2,etc\"
-echo
-echo List all availabale options with \"efibootmgr\"
-echo See \"man efibootmgr\" for more information.
-echo ---- END NOTE ----
-echo
