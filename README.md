@@ -28,7 +28,7 @@ Enable everything by setting `UKI_ON=1` in `/etc/default/dracut-uki-hook`.
 The default files here assume you have `plymouth` installed and microcode update-files for your kernel: `intel-ucode` if you have an Intel CPU. You can change this in de dracut config files in `/etc/dracut`.
 
 ## Notes
-- If microcode is updated, you need to manually run  `xbps-reconfigure --force linux<x>.<y>`. I haven´t found a way to do this in an automated way (tips welcome!).
+- If microcode is updated, you need to manually run  `xbps-reconfigure --force linux<x>.<y>`. I haven´t found a way to do this in an automated way (yet), but tips are welcome.
 - The easiest way to setup Secure Boot in te first place, is via `sbctl`  - install it. See [Arch wiki](https://wiki.archlinux.org/title/Unified_Extensible_Firmware_Interface/Secure_Boot) section on sbctl.
 - Anything you put in `/etc/dracut.conf` or in conf files in `/etc/dracut.conf.d` will **always** be parsed by dracut. That is the reason to make 2 seperate configs in `/etc/dracut`: to have the option to have different configs for _normal_ and _fallback_ images that are independent from Void updates.
 - These files will install a normal UKI **and** optionally a fallback UKI per kernel, see Installation section. For instance, if you installed `linux` and `linux-lts` kernel packages, you will potentially end up with **4** UKIs (2 normal, 2 fallback).
